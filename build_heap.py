@@ -15,7 +15,7 @@ def heap(data,a, i, swaps):
         heap(data, a, res, swaps)
 
 
-def build_heap(data, a):
+def build_heap(data):
     swaps = []
     a=len(data)
     for i in range(a//2-1,-1,-1):
