@@ -19,7 +19,7 @@ def build_heap(data):
     swaps = []
     a=len(data)
     for i in range(a//2-1,-1,-1):
-        heap(data, a, j, swaps)
+        heap(data, a, i, swaps)
  
     return swaps    
     # TODO: Creat heap and heap sort
