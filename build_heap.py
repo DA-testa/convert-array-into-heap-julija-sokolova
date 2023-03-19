@@ -2,17 +2,17 @@
 
 #Julija Sokolova 221RDB058
 def heap(data,a, i, swaps):
-len1=i*2+1
-len2=i*2+2
-res=i
-if len1<a and data[len1]<data[res]:
-    res=len1
-if len2<a and data[len2]<data[res]:
-    res=len2
-if res!=i:
-    swaps.append((i,res))
-    data[i], data[res]=data[res],data[i]
-    heap(data, a, res, swaps)
+    len1=i*2+1
+    len2=i*2+2
+    res=i
+    if len1<a and data[len1]<data[res]:
+        res=len1
+    if len2<a and data[len2]<data[res]:
+        res=len2
+    if res!=i:
+        swaps.append((i,res))
+        data[i], data[res]=data[res],data[i]
+        heap(data, a, res, swaps)
 
 
 def build_heap(data, a):
