@@ -17,13 +17,11 @@ if res!=a:
 
 def build_heap(data, a):
     swaps = []
-    count=0
-    len=a-1
-    for i in range(floor(a/2), -1, 1):
-        count=heap(data,a, j, swaps)
-        swaps=heap(data,a, j, swaps)
-        data=heap(data,a, j, swaps)
-    return count, swaps    
+    a=len(data)
+    for i in range(a//2-1,-1,-1):
+        heap(data, a, j, swaps)
+ 
+    return swaps    
     # TODO: Creat heap and heap sort
     # try to achieve  O(n) and not O(n2)
 
