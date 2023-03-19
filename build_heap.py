@@ -30,12 +30,20 @@ def main():
     # TODO : add input and corresponding checks
     # add another input for I or F 
     # first two tests are from keyboard, third test is from a file
+    teksts=input()
 
-
-    # input from keyboard
-    n = int(input())
-    data = list(map(int, input().split()))
-
+   #  input from keyboard
+    if "I" in teksts:    
+        n = int(input())
+        data = list(map(int, input().split()))
+    elif "F" in teksts:
+        fails=input()
+        with open("tests/" + fails, 'r'):
+            b=int(fails.readline())
+            data=list(map(int, fails.readline().split()))
+    else:
+        print("error")
+        return
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
 
