@@ -1,7 +1,7 @@
 # python3
 
 #Julija Sokolova 221RDB058
-def heap(data,a, j, swaps)
+def heap(data,a, j, swaps):
 len1=j*2+1
 len2=j*2+2
 res=j
