@@ -38,7 +38,7 @@ def main():
         data = list(map(int, input().split()))
     elif "F" in teksts:
         fails=input()
-        with open("tests/" + fails, 'r'):
+        with open("tests/" + fails, 'r') as fails:
             b=int(fails.readline())
             data=list(map(int, fails.readline().split()))
     else:
